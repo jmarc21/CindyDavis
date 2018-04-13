@@ -16,55 +16,287 @@
             <img src="./images/CindyDavisLogo.svg" alt="Cindy Davis for State Board of Education" class="logo">
             <div class="menuContainer">
                 <ul>Home</ul>
+                <ul>Views</ul>
                 <ul>Request a Sign</ul>
                 <ul>Contribute</ul>
             </div>
         </header>
         <div class="aboutContainer">
-            <h1>About me</h1>
-            <p>Parents have the primary responsibility for the development of their children. Their attitude, encouragement
-                and involvement have the most influence in a child’s growth and education. Over 90% of Utah parents enroll
-                their children in district and charter schools. These combine to create public schools for kids. Cindy is
-                uniquely qualified as both parent and practitioner to take a preK-post high school view of our education
-                system. The Utah constitution calls for the Utah Board of Education to oversee public education in our state.
-                Too often we have top-down unfunded mandates that reduce the nimbleness of schools and impair local ability
-                to meet student needs. Cindy will work for policies that make sense for schools and families.</p>
+            <div class="opacWhite">
+                <h1>My Vision</h1>
+                <p>Parents have the primary responsibility for the development of their children. Their attitude, encouragement
+                    and involvement have the most influence in a child’s growth and education. Over 90% of Utah parents enroll
+                    their children in district and charter schools. These combine to create public schools for kids. Cindy
+                    is uniquely qualified as both parent and practitioner to take a preK-post high school view of our education
+                    system. The Utah constitution calls for the Utah Board of Education to oversee public education in our
+                    state. Too often we have top-down unfunded mandates that reduce the nimbleness of schools and impair
+                    local ability to meet student needs. Cindy will work for policies that make sense for schools and families.</p>
+            </div>
         </div>
-        <div class="education">
-            <h1>Education</h1>
-            <li>Bachelor of Arts Brigham Young University.</li>
-            <li>Masters of Education Leadership and Policy U of U.</li>
-            <li>Reading Instruction Endorsement State of Utah.</li>
+        <div class="experienceContainer">
+            <div class="experience">
+                <h1>Experience</h1>
+                <div class="experienceSpec">
+                    <h2>Education</h2>
+                    <li>Bachelor of Arts Brigham Young University.</li>
+                    <li>Masters of Education Leadership and Policy U of U.</li>
+                    <li>Reading Instruction Endorsement State of Utah.</li>
+                </div>
+                <div class="experienceSpec">
+                    <h2>Current Work</h2>
+                    <li>Education Adjunct Professor/Field Supervisor UVU.</li>
+                </div>
+                <div class="experienceSpec">
+                    <h2>Work Experience</h2>
+                    <li>Teacher/English Dept. Chair Oak Canyon Jr. High.</li>
+                    <li>Instructor International Outreach/Model UN BYU.</li>
+                    <li>Assistant Principal Lone Peak HighSchool.</li>
+                    <li>Principal Shelley Elementary School.</li>
+                    <li>Special Education Director/South Schools ASD.</li>
+                </div>
+                <div class="experienceSpec">
+                    <h2>Volunteer Work</h2>
+                    <li>Have served on PTA and SCC at four ASD schools.</li>
+                    <li>Alpine District Community Council.</li>
+                </div>
+                <div class="experienceSpec">
+                    <h2>Advisory Boards</h2>
+                    <li>David M. Kennedy Center for International Area Studies BYU.</li>
+                    <li>CBE-Flexible, Deeper learning Utah State Board of Ed.</li>
+                </div>
+            </div>
+            <div class="videoContainer">
+                <div class="infoVideo">
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCindyDavisforSchoolBoard%2Fvideos%2F295450814319185%2F&show_text=0&width=560&mute=0"
+                        width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+                        allowFullScreen="true"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="currentWork">
-            <h1>Current Work</h1>
-            <li>Education Adjunct Professor/Field Supervisor UVU.</li>
+        <div class="views">
+            <div class="viewsOpacWhite">
+                <div class="viewsContainer">
+                    <h1>Views</h1>
+                    <div class="viewItems">
+                        <button class="viewButton" onclick="selectedView(1)">Funding</button>
+                        <button class="viewButton" onclick="selectedView(2)">Transparency</button>
+                        <button class="viewButton" onclick="selectedView(3)">Teachers</button>
+                        <button class="viewButton" onclick="selectedView(4)">Parents</button>
+                        <button class="viewButton" onclick="selectedView(5)">Policy</button>
+                        <button class="viewButton" onclick="selectedView(6)">Tone</button>
+                    </div>
+                    <div id="funding">
+                        <p class="viewContent">Funding for schools is needed. As our legislature provides funding for the WPU, it is important to
+                            recognize that some money is needed just to cover growth and inflation, so increases can be deceiving.
+                            Due to an income tax reduction and a constitutional change to divide K-12 funding with higher
+                            ed, schools have seen considerable cuts in resources. We are not back to 2008 pre-recession funding
+                            for education. While revenue generation for education does not fall under the purview of USBE,
+                            stewardship and oversight of Utah schools does. Board members can define and express need to
+                            legislators, and in turn, act as responsible stewards of allocations.</p>
+                    </div>
+                    <div id="transparency" class="displayNone">
+                        <p class="viewContent">Public trust must be earned, and transparency is key to earning that trust. As a parent I have appreciated
+                            the effort that the board has made to broadcast meetings online. I have also appreciated the
+                            many reports that the board generates and publishes for all to consider. Additionally, when important
+                            changes are to be made, not only has there been an opportunity for public input at board meetings,
+                            but separate meetings have been scheduled for the sole purpose of listening to stakeholder input.
+                            I would support all of those things continuing and anything additional that could increase transparency
+                            for the Board of Education.</p>
+                    </div>
+                    <div id="teachers" class="displayNone">
+                        <p class="viewContent">Thank you, teachers. Thank you. Thank you. Thank you. We are losing many of our teachers to other
+                            states or professions. Attrition is concerning, and finding qualified applicants to teach is
+                            not always easy, especially during a healthy economy. We must look at recruitment, induction,
+                            and retention when it comes to our teaching force in Utah. That means listening to those who
+                            have boots on the ground and working together so that policymakers, practitioners, and parents
+                            can form bridges that will lead to a healthy educational milieu in our state.</p>
+                    </div>
+                    <div id="parents" class="displayNone">
+                        <p class="viewContent">As a principal, I was blown away by the service rendered by you, as parents to our school. You could
+                            have sat on the sidelines and complained about the million difficulties public education experiences.
+                            However, you jumped in. You got on board. You spent your time, energy, and resources helping
+                            in any way you could. I am mostly a stay at home parent now, and have tried to emulate you. As
+                            your principal, while nowhere near perfect, I tried to honor, respect, seek and implement your
+                            feedback. I said often as a principal, “If plan A doesn’t work, we will try Plan B. If Plan B
+                            doesn’t work, we will try plan C. If plan C doesn’t work, we will try plan D,” and so on. We
+                            as parents must advocate for what we feel is right for our students, and we as practitioners
+                            and policy makers must partner with parents.</p>
+                    </div>
+                    <div id="policy" class="displayNone">
+                        <p class="viewContent">I believe that all policy makers have a responsibility to finetooth comb policy and look for ways
+                            to support schools rather than give top down unfunded mandate’s. Educators have plates that are
+                            burgeoning, and not just from trying to meet vastly varied student needs. This is happening from
+                            a myriad of requirements that may or may not be funded, may or may not have technical support,
+                            may or may not have training provided, may or may not even make an impact on students. Administrators,
+                            teachers staff, and parents are working hard for our children. The mountain they have to climb
+                            does not need to be made steeper by unnecessary or unfunded mandates.</p>
+                    </div>
+                    <div id="tone" class="displayNone">
+                        <p class="viewContent">Sometimes I say to policymakers, “There is something you could do for education in the state of Utah
+                            and it wouldn’t cost one red cent. We could change our tone. We could seek to find the good while
+                            we also work diligently to extinguish the bad. We could give credit where credit is due even
+                            while trying to innovate and constantly improve education for our children. As colleagues, constituents,
+                            caregivers, critics, and community members, we could speak respectfully to one another even when
+                            we disagree. We could move forward in professional ways to find not only compromise but consensus.
+                            I have always thought that the longer we communicate, the more we will find we have in common
+                            than otherwise. Let’s tackle problems together not tackle each other in the process.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="workExperience">
-            <h1>Work Experience</h1>
-            <li>Teacher/English Dept. Chair Oak Canyon Jr. High.</li>
-            <li>Instructor International Outreach/Model UN BYU.</li>
-            <li>Assistant Principal Lone Peak HighSchool.</li>
-            <li>Principal Shelley Elementary School.</li>
-            <li>Special Education Director/South Schools ASD.</li>
+        <script>
+            function selectedView(n) {
+                console.log(n)
+                if (n === 1) {
+                    document.getElementById('funding').className = ''
+                    document.getElementById('transparency').className = 'displayNone'
+                    document.getElementById('teachers').className = 'displayNone'
+                    document.getElementById('parents').className = 'displayNone'
+                    document.getElementById('policy').className = 'displayNone'
+                    document.getElementById('tone').className = 'displayNone'
+                }
+                if (n === 2) {
+                    document.getElementById('funding').className = 'displayNone'
+                    document.getElementById('transparency').className = ''
+                    document.getElementById('teachers').className = 'displayNone'
+                    document.getElementById('parents').className = 'displayNone'
+                    document.getElementById('policy').className = 'displayNone'
+                    document.getElementById('tone').className = 'displayNone'
+                }
+                if (n === 3) {
+                    document.getElementById('funding').className = 'displayNone'
+                    document.getElementById('transparency').className = 'displayNone'
+                    document.getElementById('teachers').className = ''
+                    document.getElementById('parents').className = 'displayNone'
+                    document.getElementById('policy').className = 'displayNone'
+                    document.getElementById('tone').className = 'displayNone'
+                }
+                if (n === 4) {
+                    document.getElementById('funding').className = 'displayNone'
+                    document.getElementById('transparency').className = 'displayNone'
+                    document.getElementById('teachers').className = 'displayNone'
+                    document.getElementById('parents').className = ''
+                    document.getElementById('policy').className = 'displayNone'
+                    document.getElementById('tone').className = 'displayNone'
+                }
+                if (n === 5) {
+                    document.getElementById('funding').className = 'displayNone'
+                    document.getElementById('transparency').className = 'displayNone'
+                    document.getElementById('teachers').className = 'displayNone'
+                    document.getElementById('parents').className = 'displayNone'
+                    document.getElementById('policy').className = ''
+                    document.getElementById('tone').className = 'displayNone'
+                }
+                if (n === 6) {
+                    document.getElementById('funding').className = 'displayNone';
+                    document.getElementById('transparency').className = 'displayNone'
+                    document.getElementById('teachers').className = 'displayNone'
+                    document.getElementById('parents').className = 'displayNone'
+                    document.getElementById('policy').className = 'displayNone'
+                    document.getElementById('tone').className = ''
+                }
+            }
+        </script>
+        <div class="endorsements">
+            <div class="endorsementContent">
+                <div class="mySlides">
+                    <p>“Hands Down. Cindy Davis. Brilliant mind. Fierce defender of kids and Deeper Learning.” </p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Denise Wetmore Lund</h3>
+                    <h3 class="authorTitle">Curriculum Specialist ASD</h3>
+                </div>
+                <div class="mySlides">
+                    <p>“I am so impressed with Cindy’s understanding of Utah’s education system and her willingness to listen
+                        to all sides.”</p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Jami Evans Edmund</h3>
+                    <h3 class="authorTitle">Parent</h3>
+                </div>
+                <div class="mySlides">
+                    <p>“I cannot think of anyone more qualified to be on the state school board. Every once in a while we get
+                        a chance to vote for someone who we really believe in, who is a true leader, who is good to the core,
+                        and brilliant- well, that is Cindy Davis. I support her whole-heartedly… she will make all the difference
+                        for our children.” </p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Ryan Burke</h3>
+                    <h3 class="authorTitle">District Special Education Director ASD</h3>
+                </div>
+                <div class="mySlides">
+                    <p>“Yes, YES, a thousand votes yes!!” </p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Jennifer Morello</h3>
+                    <h3 class="authorTitle">Parent</h3>
+                </div>
+                <div class="mySlides">
+                    <p> “I remember that first day at Oak Canyon when, as new colleagues, I met you. You were amazing then and
+                        have maintained your enthusiasm and expertise. I hope the voters will help you serve all the children
+                        in the State of Utah as you seek this opportunity.” </p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Karl Gadd</h3>
+                    <h3 class="authorTitle">Math Teacher</h3>
+                </div>
+                <div class="mySlides">
+                    <p>“So excited to cast my vote for Cindy Davis for state school board! She embodies everything I value in
+                        a candidate: experience, poise, understanding of issues and perspectives, genuine concern, honesty,
+                        and on and on... Cindy is the kind of candidate that you hope with all your heart will run (for anything),
+                        and then it feels like Christmas morning when she does!” </p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Kate Ross</h3>
+                    <h3 class="authorTitle">Lindon Elementary School Principal</h3>
+                </div>
+                <div class="mySlides">
+                    <p>“Cindy is passionate about education and children. She will do great things on the Utah state school
+                        board.” </p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Angi LeBaron Cummings</h3>
+                    <h3 class="authorTitle">Teacher Shelley Elementary School</h3>
+                </div>
+                <div class="mySlides">
+                    <p>“She truly walks the walk when it comes to supporting our schools and our children. She is running for
+                        state school board in District 9, covering most of the Alpine School District area. She will be a
+                        fantastic advocate and I encourage you to vote for her in June and November.”
+                    </p>
+                    <hr>
+                    <hr>
+                    <h3 class="author">Kara Rasband Edwards</h3>
+                    <h3 class="authorTitle">Parent</h3>
+                </div>
+            </div>
         </div>
-        <div class="volunteer">
-            <h1>Volunteer Work</h1>
-            <li>Have served on PTA and SCC at four ASD schools.</li>
-            <li>Alpine District Community Council.</li>
-        </div>
-        <div class="advisoryBoards">
-            <h1>Advisory Boards</h1>
-            <li>David M. Kennedy Center for International Area Studies BYU.</li>
-            <li>CBE-Flexible, Deeper learning Utah State Board of Ed.</li>
-        </div>
-        <div class="signContainer">
-            <h1>Request a sign</h1>
-        </div>
-        <div class="donateContainer">
-            <h1>Donate</h1>
-            <h3>PayPal</h3>
-            <h3>Venmo</h3>
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) { slideIndex = 1 }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 10000);
+            }
+        </script>
+        <div class="contributionsContainer">
+            <div class="signContainer">
+                <h1>Request a sign</h1>
+                <p>Please include in your message your Name and Home Address for us to be able to deliever your sign. </p>
+                <a href="mailto:justindemarco21@gmail.com?subject=Yard sign&body=I would like a yard sign">get a sign</a>
+            </div>
+            <div class="donateContainer">
+                <h1>Donate</h1>
+                <h3>PayPal</h3>
+                <h3>Venmo</h3>
+            </div>
         </div>
         <footer>
             <div class="footerSections">
@@ -75,7 +307,7 @@
             </div>
             <div class="footerSections">
                 <h2>Email:</h2>
-                <h3>example@gmail.com</h3>
+                <a href="mailto:justindemarco21@gmail.com?subject=Yard sign&body=I would like a yard sign">cindys email</a>
             </div>
         </footer>
     </div>
