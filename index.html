@@ -8,20 +8,41 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
     <title>Cindy Davis</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class="landing">
         <header class="header">
             <img src="./images/CindyDavisLogo.svg" alt="Cindy Davis for State Board of Education" class="logo">
+
             <div class="menuContainer">
-                <ul>Home</ul>
-                <ul>Views</ul>
-                <ul>Request a Sign</ul>
-                <ul>Contribute</ul>
+                <a href="#vision" class="menuLinks">Vision</a>
+                <a href="#experience" class="menuLinks">Experience</a>
+                <a href="#views" class="menuLinks">Views</a>
+                <a href="#endorse" class="menuLinks">Endorsements</a>
+                <a href="#sign" class="menuLinks">Request a Sign</a>
+                <a href="#donate" class="menuLinks">Contribute</a>
             </div>
         </header>
-        <div class="aboutContainer">
+        <div class="slogan">STRONG SCHOOLS FOR A
+            <br/> BRIGHT FUTURE</div>
+        <div id="vision" class="aboutContainer">
             <div class="opacWhite">
                 <h1>My Vision</h1>
                 <p>Parents have the primary responsibility for the development of their children. Their attitude, encouragement
@@ -33,9 +54,8 @@
                     local ability to meet student needs. Cindy will work for policies that make sense for schools and families.</p>
             </div>
         </div>
-        <div class="experienceContainer">
+        <div id="experience" class="experienceContainer">
             <div class="experience">
-                <h1>Experience</h1>
                 <div class="experienceSpec">
                     <h2>Education</h2>
                     <li>Bachelor of Arts Brigham Young University.</li>
@@ -43,11 +63,11 @@
                     <li>Reading Instruction Endorsement State of Utah.</li>
                 </div>
                 <div class="experienceSpec">
-                    <h2>Current Work</h2>
+                    <h2>Current Professional Experience</h2>
                     <li>Education Adjunct Professor/Field Supervisor UVU.</li>
                 </div>
                 <div class="experienceSpec">
-                    <h2>Work Experience</h2>
+                    <h2>Past Professional Experience</h2>
                     <li>Teacher/English Dept. Chair Oak Canyon Jr. High.</li>
                     <li>Instructor International Outreach/Model UN BYU.</li>
                     <li>Assistant Principal Lone Peak HighSchool.</li>
@@ -74,7 +94,7 @@
             </div>
         </div>
         <div class="views">
-            <div class="viewsOpacWhite">
+            <div id="views" class="viewsOpacWhite">
                 <div class="viewsContainer">
                     <h1>Views</h1>
                     <div class="viewItems">
@@ -197,14 +217,14 @@
                 }
             }
         </script>
-        <div class="endorsements">
+        <div id="endorse" class="endorsements">
             <div class="endorsementContent">
                 <div class="mySlides">
                     <p>“Hands Down. Cindy Davis. Brilliant mind. Fierce defender of kids and Deeper Learning.” </p>
                     <hr>
                     <hr>
                     <h3 class="author">Denise Wetmore Lund</h3>
-                    <h3 class="authorTitle">Curriculum Specialist ASD</h3>
+                    <h3 class="authorTitle">Curriculum Specialist</h3>
                 </div>
                 <div class="mySlides">
                     <p>“I am so impressed with Cindy’s understanding of Utah’s education system and her willingness to listen
@@ -222,7 +242,7 @@
                     <hr>
                     <hr>
                     <h3 class="author">Ryan Burke</h3>
-                    <h3 class="authorTitle">District Special Education Director ASD</h3>
+                    <h3 class="authorTitle">District Special Education Director</h3>
                 </div>
                 <div class="mySlides">
                     <p>“Yes, YES, a thousand votes yes!!” </p>
@@ -286,16 +306,22 @@
                 setTimeout(carousel, 10000);
             }
         </script>
-        <div class="contributionsContainer">
+        <div id="sign" class="contributionsContainer">
             <div class="signContainer">
-                <h1>Request a sign</h1>
+                <!-- <h1>Request a sign</h1> -->
+                <a href="mailto:cindydavisforschoolboard@gmail.com?subject=Yard sign&body=" class="signButton">Request a Sign</a>
                 <p>Please include in your message your Name and Home Address for us to be able to deliever your sign. </p>
-                <a href="mailto:justindemarco21@gmail.com?subject=Yard sign&body=I would like a yard sign">get a sign</a>
+                <img class="signImg" src="./images/sign.png" />
             </div>
-            <div class="donateContainer">
+            <div id="donate" class="donateContainer">
                 <h1>Donate</h1>
-                <h3>PayPal</h3>
-                <h3>Venmo</h3>
+                <div class="container">
+                    <div class="paypal">
+                        <div class="donation">PayPal</div>
+                        <p class="paypal">Please make donations to the account cindydavisforschoolboard@gmail.com. Please include your home address for disclosure statements.</p>
+                    </div>
+                    <a href="https://venmo.com/cindydavisforschoolboard" target="_blank" class="donation">Venmo</a>
+                </div>
             </div>
         </div>
         <footer>
@@ -307,7 +333,7 @@
             </div>
             <div class="footerSections">
                 <h2>Email:</h2>
-                <a href="mailto:justindemarco21@gmail.com?subject=Yard sign&body=I would like a yard sign">cindys email</a>
+                <a href="mailto:cindydavisforschoolboard@gmail.com?subject=&body=" class="cindyEmail">cindydavisforschoolboard@gmail.com</a>
             </div>
         </footer>
     </div>
